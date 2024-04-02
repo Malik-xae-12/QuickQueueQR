@@ -40,11 +40,6 @@ app.use('*',function(req,res){
   res.sendFile(path.join(__dirname,"./client/build/index.html"))
 })
 
-app.get("/", (req, res) => {
-  res.send({
-    message: "welcome to ecommerce app",
-  });
-});
 
 //port
 const PORT = process.env.PORT || 8080;
